@@ -35,9 +35,6 @@
  <access origin="htpp://*/*"/>
  <plugin name="cordova-plugin-whitelist" source="npm"/>
  
-
-
- 
  <!--Colocar icono app -->
  <icon src="res/android/mdpi.png"/>
  
