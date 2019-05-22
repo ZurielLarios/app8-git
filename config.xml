@@ -16,11 +16,11 @@
  </author>
  
  <!-- Personaliza la aplicacion y plataforma-->
- <preference name="orientation" 	value="default"/>
- <preference name="target-device" 	value="universal"/>
- <preference name="fullscreen" 	value="true"/>
- <preference name="android-installLocation" 	value="auto"/>
- <preference name="permissions" 	value="INTERNET"/>
+ <preference name="orientation" value="default"/>
+ <preference name="target-device" value="universal"/>
+ <preference name="fullscreen" value="true"/>
+ <preference name="android-installLocation" value="auto"/>
+ <preference name="permissions" value="INTERNET"/>
  
  <!--Plugins-->
  <plugin name="cordova-plugin-device" spec="~1.1.4" />
@@ -29,10 +29,10 @@
  
  <plugin name="cordova-plugin-geolocation" spec="2.4.3"/>
  
- <allow-intent href="htpps://*/*"/>
- <access origin="htpps://*/*"/>
+ <allow-intent href="https://*/*"/>
+ <access origin="https://*/*"/>
  <allow-intent href="http://*/*"/>
- <access origin="htpp://*/*"/>
+ <access origin="http://*/*"/>
  <plugin name="cordova-plugin-whitelist" source="npm"/>
  
  <!--Colocar icono app -->
