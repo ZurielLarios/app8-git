@@ -10,7 +10,7 @@
 <script type="text/javascript">
 if(navigator.geolocation){
 	navigator.geolocation.getCurrentPosition (mostrarUbicacion);
-} else{alert("¡Error! Este navegador no soporta la Geolocalización.");}
+}else{alert("¡Error! Este navegador no soporta la Geolocalización.");}
 function refrescarUbicacion(){
 	navigator.geolocation.watchPosition(mostrarUbicacion);}
  </script>
@@ -20,17 +20,17 @@ function refrescarUbicacion(){
     <div id="mapholder"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd0aiE5FttY8XRAFI9ecTSpgo2vP-qMk"></script>
     
-    <button onClick="cargarmap()"> Cargar mapa </button>
+    <button onClick="cargarmap()">Cargar mapa</button>
     <script type="text/javascript">
 	var x=document.getElementById("demo");
 	function cargarmap(){
-		navigator.geolocation.getCurrentPosition(showPosition,showError);
+		navigator.geolocation.getCurrentPosition (showPosition,showError);
 		function showPosition(position)
 		{
 			lat=position.coords.latitude;
 			lon=position.coords.longitude;
 			latlon=new google.maps.LatLng(lat,lon)
-			mapholder=document.getElementById('mapholder')
+			mapholder =document.getElementById('mapholder')
 			mapholder.style.height ='500px';
 			mapholder.style.width ='750px';
 			var myOptions={
